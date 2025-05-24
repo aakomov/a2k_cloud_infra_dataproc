@@ -106,7 +106,7 @@ variable "dataproc_data_resources" {
   default = {
     resource_preset_id = "s3-c4-m16"
     disk_type_id       = "network-ssd"
-    disk_size          = 128
+    disk_size          = 45     # Compute quota for: compute.ssdDisks.size required 455266533376.00 but available 214748364800.00
   }
 }
 variable "s3_bucket" {
